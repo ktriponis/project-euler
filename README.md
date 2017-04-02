@@ -1,5 +1,7 @@
 # Project Euler
 
+[![Build Status](https://travis-ci.org/ktriponis/project-euler.svg?branch=master)](https://travis-ci.org/ktriponis/project-euler)
+
 This repository is simply my attempt at solving problems from [projecteuler.net](https://projecteuler.net/).
 
 # Solved Problems
