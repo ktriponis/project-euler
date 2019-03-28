@@ -13,6 +13,7 @@ This repository is simply my attempt at solving problems from [projecteuler.net]
 * Write all the code using TDD
 * Follow SOLID principle where and when applicable
 * Prioritize readability/maintainability
+* Use modern language and library features
 
 # Disclaimer
 
