@@ -9,4 +9,12 @@ subprojects {
         testCompile 'junit:junit:4.12'
         testCompile 'org.assertj:assertj-core:3.6.2'
     }
+
+    task printResults(type: Test) {
+        group = 'verification'
+        filter {
+            includeTestsMatching "lt.ktriponis.euler.problem1*.*Test.result"
+        }
+        outputs.upToDateWhen { false }
+    }
 }

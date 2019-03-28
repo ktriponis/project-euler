@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 public class MultiplesTest {
 
     @Test
-    public void testEdgeCases() {
+    public void edgeCases() {
         assertThat(getMultiplesOf(0)).isEmpty();
         assertThatExceptionOfType(MultiplesException.class)
                 .isThrownBy(() -> getMultiplesOf(1, 0))
@@ -17,7 +17,7 @@ public class MultiplesTest {
     }
 
     @Test
-    public void testListMultiples() {
+    public void listMultiples() {
         assertThat(getMultiplesOf(3, 1)).containsExactly(1, 2);
         assertThat(getMultiplesOf(5, 1)).containsExactly(1, 2, 3, 4);
         assertThat(getMultiplesOf(5, 2)).containsExactly(2, 4);
@@ -30,8 +30,8 @@ public class MultiplesTest {
     }
 
     @Test
-    public void testResult() {
-        System.out.println(new Multiples().getMultiplesOf(1000, 3, 5).sum());
+    public void result() {
+        System.out.println("Multiples of 3 and 5: " + new Multiples().getMultiplesOf(1000, 3, 5).sum());
     }
 
     private static int[] getMultiplesOf(int max, int... numbers) {

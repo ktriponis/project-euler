@@ -2,9 +2,9 @@ package lt.ktriponis.euler.problem1;
 
 import java.util.stream.IntStream;
 
-public class Multiples {
+class Multiples {
 
-    public IntStream getMultiplesOf(int maxExclusive, int... numbers) {
+    IntStream getMultiplesOf(int maxExclusive, int... numbers) {
         if (maxExclusive < 0 || numbers.length < 1)
             return IntStream.empty();
         if (numbers[0] == 0)
@@ -14,9 +14,9 @@ public class Multiples {
                 .filter(num -> IntStream.of(numbers).anyMatch(i -> num % i == 0));
     }
 
-    public static final class MultiplesException extends RuntimeException {
+    static final class MultiplesException extends RuntimeException {
 
-        public MultiplesException(String message) {
+        MultiplesException(String message) {
             super(message);
         }
     }
