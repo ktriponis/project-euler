@@ -51,5 +51,6 @@ task jacocoRootReport(type: JacocoReport, group: 'verification') {
 }
 
 coveralls {
+    sourceDirs = (List<String>) subprojects.sourceSets.main.allSource.srcDirs.flatten()
     jacocoReportPath = "${buildDir}/reports/jacoco/jacocoRootReport/jacocoRootReport.xml"
 }
