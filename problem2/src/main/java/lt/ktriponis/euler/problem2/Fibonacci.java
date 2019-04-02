@@ -1,4 +1,4 @@
-package lt.ktriponis.euler.problem1;
+package lt.ktriponis.euler.problem2;
 
 import java.util.stream.IntStream;
 

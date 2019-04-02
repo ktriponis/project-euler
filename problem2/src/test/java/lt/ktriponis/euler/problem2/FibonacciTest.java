@@ -1,9 +1,9 @@
-package lt.ktriponis.euler.problem1;
+package lt.ktriponis.euler.problem2;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import static lt.ktriponis.euler.problem1.Fibonacci.*;
+import static lt.ktriponis.euler.problem2.Fibonacci.*;
 import static org.assertj.core.api.Assertions.*;
 
 class FibonacciTest {
