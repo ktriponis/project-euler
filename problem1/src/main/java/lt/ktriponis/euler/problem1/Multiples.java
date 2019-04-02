@@ -4,7 +4,11 @@ import java.util.stream.IntStream;
 
 class Multiples {
 
-    IntStream getMultiplesOf(int maxExclusive, int... numbers) {
+    Multiples() {
+        throw new IllegalStateException("Utility class");
+    }
+
+    static IntStream getMultiplesOf(int maxExclusive, int... numbers) {
         if (maxExclusive < 0 || numbers.length < 1)
             return IntStream.empty();
         if (numbers[0] == 0)

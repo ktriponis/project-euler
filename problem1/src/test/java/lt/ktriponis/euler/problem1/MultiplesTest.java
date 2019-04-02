@@ -1,12 +1,20 @@
 package lt.ktriponis.euler.problem1;
 
-import lt.ktriponis.euler.problem1.Multiples.MultiplesException;
+import lt.ktriponis.euler.problem1.Multiples.*;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static lt.ktriponis.euler.problem1.Multiples.*;
 import static org.assertj.core.api.Assertions.*;
 
 class MultiplesTest {
+
+    @Test
+    void utilityClass() {
+        assertThatExceptionOfType(IllegalStateException.class)
+                .isThrownBy(Multiples::new)
+                .withMessage("Utility class");
+    }
 
     @Test
     void edgeCases() {
@@ -32,10 +40,6 @@ class MultiplesTest {
     @Tag("result")
     @Test
     void multiplesOf3And5() {
-        System.out.println("Multiples of 3 and 5: " + new Multiples().getMultiplesOf(1000, 3, 5).sum());
-    }
-
-    private static int[] getMultiplesOf(int max, int... numbers) {
-        return new Multiples().getMultiplesOf(max, numbers).toArray();
+        System.out.println("Multiples of 3 and 5: " + getMultiplesOf(1000, 3, 5).sum());
     }
 }
