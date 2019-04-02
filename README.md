@@ -8,6 +8,7 @@ This repository is simply my attempt at solving problems from [projecteuler.net]
 # Solved Problems
 
 * [Multiples of 3 and 5](problem1)
+* [Even Fibonacci numbers](problem2)
 
 # Goals
 
